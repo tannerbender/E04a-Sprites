@@ -37,7 +37,9 @@ class MyGame(arcade.Window):
 
 
     def on_mouse_motion(self, x, y, dx, dy):
-        pass
+        currAnimal = self.animal_list[0]
+        currAnimal.center_x = x
+        currAnimal.center_y = y
 
 def main():
     """ Main method """
